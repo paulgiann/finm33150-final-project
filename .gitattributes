@@ -1,0 +1,8 @@
+# Exclude binary deliverables and data from GitHub language statistics
+*.pptx linguist-vendored
+*.docx linguist-vendored
+*.parquet linguist-vendored
+*.pdf linguist-vendored
+
+# The notebook is the primary deliverable — keep it counted
+*.ipynb linguist-detectable=true

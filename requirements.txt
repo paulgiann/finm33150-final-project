@@ -1,0 +1,13 @@
+# FINM 33150 Final Project — Sizing, Not Signaling
+# Tested with Python 3.10. Versions below are the ones used to produce the
+# committed notebook; the notebook should run with newer minor versions as well.
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+scipy>=1.10
+seaborn>=0.12
+pyarrow>=12.0       # parquet backend for pandas
+
+# Only needed if you want to rebuild the notebook from the builder scripts
+nbformat>=5.9
+nbclient>=0.9

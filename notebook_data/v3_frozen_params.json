@@ -1,0 +1,83 @@
+{
+  "version": "v3",
+  "asset_selection_rule": "AUM-rank slot-fill, frozen 2017-12-31",
+  "book": [
+    "SPY",
+    "IWM",
+    "EFA",
+    "EEM",
+    "XLK",
+    "XLF",
+    "GLD",
+    "TLT"
+  ],
+  "class_labels": {
+    "SPY": "US large-cap (SPDR S&P 500)",
+    "IWM": "US small-cap (iShares R2000)",
+    "EFA": "Developed ex-US (iShares MSCI EAFE)",
+    "EEM": "Emerging mkts (iShares MSCI EM)",
+    "XLK": "US tech sector (SPDR XLK)",
+    "XLF": "US financials sector (SPDR XLF)",
+    "GLD": "Gold (SPDR Gold Trust)",
+    "TLT": "US 20Y+ Treasury (iShares TLT)"
+  },
+  "vol_target_per_leg": 0.1,
+  "gross_cap": 3.5,
+  "regime_mults": {
+    "0_calm": 1.5,
+    "1_normal": 1.0,
+    "2_stress": 0.5,
+    "3_crisis": 0.0
+  },
+  "regime_thresholds": {
+    "lo": 0.33,
+    "hi": 0.85,
+    "ext": 0.97
+  },
+  "dd_stop": -0.2,
+  "dd_resume": -0.07,
+  "cost_bps": 4.0,
+  "base_capital": 1000000.0,
+  "rebal_freq": "W-FRI",
+  "IS_window": "2008-01-01 to 2017-12-31",
+  "OOS_window": "2018-01-01 to 2024-12-31",
+  "IS_stats": {
+    "sharpe": 0.4652,
+    "sortino": 0.6272,
+    "ann_return": 0.031729,
+    "ann_vol": 0.068205,
+    "max_dd": -0.113174,
+    "total_return": 0.341471,
+    "calmar": 0.280359,
+    "hit_rate": 0.539317,
+    "skew": -0.410546,
+    "kurtosis": 2.717059
+  },
+  "frozen_at": "2026-05-24T11:50:27.811177",
+  "grid_size": 36,
+  "configs_satisfying_constraint": 36,
+  "OOS_stats": {
+    "sharpe": 0.2811,
+    "sortino": 0.3357,
+    "ann_return": 0.015862,
+    "ann_vol": 0.056432,
+    "max_dd": -0.144693,
+    "total_return": 0.097762,
+    "calmar": 0.109628,
+    "hit_rate": 0.536059,
+    "skew": -1.07702,
+    "kurtosis": 5.466673
+  },
+  "FULL_stats": {
+    "sharpe": 0.3961,
+    "sortino": 0.5094,
+    "ann_return": 0.025199,
+    "ann_vol": 0.063619,
+    "max_dd": -0.144693,
+    "total_return": 0.482105,
+    "calmar": 0.174157,
+    "hit_rate": 0.537976,
+    "skew": -0.602447,
+    "kurtosis": 3.597327
+  }
+}
